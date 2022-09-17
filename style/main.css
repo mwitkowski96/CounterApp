@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+.section{
+    min-height: 100vh;
+    max-height: 1080px;
+    background-image: url('/img/bgcSmall.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+}
+
+.app-greetings{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: left;
+    align-self: flex-start;
+}
+
+
+.counter__box{
+    height: 100%;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 10px white;
+    background-color: rgba(255, 255, 255, 0.128);
+}
+
+
+.counter__title{
+    font-size: 3rem;
+}
+
+.counter__number{
+    display: block;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.counter__buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.counter__button{
+    border: 3px solid white;;
+    border-radius: 50px;
+    margin: 1.5rem;
+    font-size: 3rem;
+
+}
+
+.increase, .decrease{
+    width: 30%;
+    font-size: 6rem;
+
+}
+
+.increase{
+    background-color: tomato;
+}
+
+.decrease{
+    background-color: royalblue;
+}
+
+.save, .reset{
+    width: 70%;
+}
+
+.save{
+    color: white;
+    padding: 2rem;
+    background-color: green;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    min-height: 50px;
+}
+
+.reset{
+    color: tomato;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: orange;
+}
+
+
+@media (min-width:576px) {
+
+    .app-greetings{
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    
+    .counter__title{
+        font-size: 3.5rem;
+    }
+    
+    .counter__number{
+        display: block;
+        font-size: 4.5rem;
+        padding: 2rem;
+    }
+    
+    .counter__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .counter__button{
+        border: 2px solid white;;
+        border-radius: 100px;
+        margin: 1.5rem;
+        font-size: 3rem;
+    }
+    
+    .increase, .decrease{
+        width: 20%;
+        font-size: 5rem;
+    }
+
+    .save, .reset{
+        width: 50%;
+    }
+}
+
+@media (min-width:992px) {
+
+    .app-greetings{
+        font-size: 3rem;
+        padding: 1rem;
+        margin-left: 5rem;
+    }
+
+    .counter__box{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .counter__title{
+        font-size: 3.5rem;
+    }
+    
+    .counter__number{
+        display: block;
+        font-size: 4.5rem;
+        padding: 2rem;
+    }
+    
+    .counter__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .counter__button{
+        border: 2px solid white;;
+        border-radius: 100px;
+        margin: 1.5rem;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    
+    .increase, .decrease{
+        width: 10%;
+        font-size: 5rem;
+    }
+
+    .save, .reset{
+        width: 25%;
+    }
+}

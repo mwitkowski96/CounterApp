@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Counter App</title>
+</head>
+<body>
+    <section class="section">
+        <p class="app-greetings"></p>
+        <div class="counter__box">
+            <h1 class="counter__title">People entered:</h1>
+            <span class="counter__number">0</span>
+            <div class="counter__buttons">
+                <button class="counter__button increase" onclick="increment()">+</button>
+                <button class="counter__button decrease" onclick="decrement()">-</button>
+                <button class="counter__button save" onclick="save()">Save</button>
+                <span class="result">Previous entries: </span>
+                <button class="counter__button reset" onclick="reset()">Reset!</button>
+            </div>
+        </div>
+    </section>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
