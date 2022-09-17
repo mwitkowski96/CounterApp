@@ -157,6 +157,10 @@
 
 @media (min-width:992px) {
 
+    .section{
+        background-image: url('/img/bgcBig.jpg');
+    }
+
     .app-greetings{
         font-size: 3rem;
         padding: 1rem;
